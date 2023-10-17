@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+"""Calculates perimeter and area of square"""
+
 
 class square():
 
@@ -6,6 +8,7 @@ class square():
     height = 0
 
     def __init__(self, *args, **kwargs):
+        """Initialize"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -14,6 +17,7 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
+        """ Perimeter of square """
         return (self.width * 4)
 
     def __str__(self):
