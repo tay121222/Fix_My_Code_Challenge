@@ -17,12 +17,13 @@ class Square():
         return (self.width * 4)
 
     def __str__(self):
-        return "{}/{}".format(self.width, self.height)
+        """ Return string rep of variables """
+        return "width = {}, height = {}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
 
     s = Square(width=12, height=12)
     print(s)
-    print(s.area())
-    print(s.perimeter())
+    print("Area:", s.area())
+    print("Perimeter:", s.perimeter())
