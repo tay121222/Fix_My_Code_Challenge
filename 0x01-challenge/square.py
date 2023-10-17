@@ -2,21 +2,17 @@
 """Calculates perimeter and area of square"""
 
 
-class square():
-
-    width = 0
-    height = 0
-
-    def __init__(self, *args, **kwargs):
+class Square():
+    def __init__(self, width=0, height=0):
         """Initialize"""
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        self.width = width
+        self.height = height
 
-    def area_of_my_square(self):
+    def area(self):
         """ Area of the square """
         return self.width * self.width
 
-    def PermiterOfMySquare(self):
+    def perimeter(self):
         """ Perimeter of square """
         return (self.width * 4)
 
@@ -26,7 +22,7 @@ class square():
 
 if __name__ == "__main__":
 
-    s = square(width=12, height=12)
+    s = Square(width=12, height=12)
     print(s)
-    print(s.area_of_my_square())
-    print(s.PermiterOfMySquare())
+    print(s.area())
+    print(s.perimeter())
